@@ -9,6 +9,7 @@ export async function subscribe(email: string) {
       },
       body: JSON.stringify({
         email: email,
+        groups: ["138249619844892538"],
       }),
     });
 

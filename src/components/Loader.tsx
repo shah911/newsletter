@@ -9,14 +9,22 @@ function Loader() {
           <motion.div
             exit={{
               clipPath: "inset(0 0 100% 0)",
-              transition: { duration: 0.5, delay: 2 + 0.05 * i },
+              transition: {
+                duration: 0.5,
+                delay: 2 + 0.05 * i,
+                ease: [0.61, 1, 0.88, 1],
+              },
             }}
             className="h-[51%] bg-black -my-1"
           />
           <motion.div
             exit={{
               clipPath: "inset(100% 0 0 0)",
-              transition: { duration: 0.5, delay: 2 + 0.05 * i },
+              transition: {
+                duration: 0.5,
+                delay: 2 + 0.05 * i,
+                ease: [0.61, 1, 0.88, 1],
+              },
             }}
             className="h-[51%] bg-black -my-1"
           />
